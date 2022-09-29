@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+      "declaration": true,
+      "allowJs": true,
+      "baseUrl": ".",
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "lib": [
+        "dom",
+        "es5",
+        "es6",
+        "ESNext"
+      ],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "dist",
+      "resolveJsonModule": true,
+      "rootDir": "src",
+      "skipLibCheck": true,
+      "target": "es2019",
+      "typeRoots": [
+        "./node_modules/@types",
+        "./typings"
+      ],
+      "jsx": "react",
+    },
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/*.stories.tsx",
+      "**/*.test.tsx",
+      "./src/setupTests.ts",
+      "./src/reportWebVitals.ts",
+      "lib",
+      "stories"
+    ]
+  }
