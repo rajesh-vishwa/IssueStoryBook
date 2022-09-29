@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +20,8 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.22.1",
     "moment": "^2.29.2",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": ">=16.14.0",
+    "react-dom": ">=16.14.0",
     "react-scripts": "4.0.3"
   },
   "peerDependencies": {
@@ -28,10 +30,16 @@
     "react-dom": ">=16.14.0"
   },
   "devDependencies": {
-    
-    
+    "@babel/core": "^7.19.3",
     "@material-ui/core": "^4.11.4",
-    
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack4": "^6.5.12",
+    "@storybook/manager-webpack4": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -41,6 +49,7 @@
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
+    "babel-loader": "^8.2.5",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.25.1",
@@ -52,5 +61,4 @@
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   }
-
 }
